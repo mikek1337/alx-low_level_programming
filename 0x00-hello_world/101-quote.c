@@ -1,14 +1,13 @@
-#include<stdio.h>
-#include<unistd.h>
-
+#include <stdio.h>
+#include <unistd.h>
 /**
  * main - Entry point
  *
- * Return: Always 1 (Success)
+ * Return: 1 Always
  */
 int main(void)
 {
-	char phrase[] = "and that piece of art is useful\" - Dora Korpar,2015-10-19\n";
-	write(2, phrase, sizeof(phrase));
+	char p[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+	write(2, p, sizeof(p));
 	return (1);
 }
