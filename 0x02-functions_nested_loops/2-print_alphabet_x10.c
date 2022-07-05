@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabet10x - Prints a - z 10 times
+ * print_alphabet_x10 - Prints a - z 10 times
  *
  * Return: Void always (Success)
  */
