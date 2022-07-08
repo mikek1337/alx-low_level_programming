@@ -1,3 +1,4 @@
+void print_triangle(int size);
 void fizz_buzz(void);
 void print_square(int);
 void print_square(int size);
