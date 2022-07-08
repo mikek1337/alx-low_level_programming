@@ -1,4 +1,4 @@
-void _putchar(char);
+int _putchar(char c);
 void print_numbers(void);
 int _isupper(int c);
 int _isdigit(int c);
