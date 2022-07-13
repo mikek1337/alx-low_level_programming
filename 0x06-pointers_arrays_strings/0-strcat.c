@@ -11,15 +11,15 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	char c;
-	int i = 0;
-	int j = 0;
+	 char c;
+	 int i = 0;
+	 int j = 0;
 	c = *(dest + i);
 	while (c != '\0')
 	{
 		i++;
 		c = *(dest + i);
-		if (c =='\0')
+		if (c == '\0')
 		{
 			c = *(src + j);
 			while (c != '\0')
@@ -32,5 +32,5 @@ char *_strcat(char *dest, char *src)
 			break;
 		}
 	}
-	return dest;
-}	
+	return (dest);
+}
