@@ -9,8 +9,8 @@
  */
 char *string_toupper(char *str)
 {
-	char c;
-	int i = 0;
+	 char c;
+	 int i = 0;
 	c = *(str + i);
 	while (c != '\0')
 	{
