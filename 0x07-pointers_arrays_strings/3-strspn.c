@@ -14,13 +14,16 @@ unsigned int _strspn(char *s, char *accept)
 	 unsigned int cnt = 0;
 	 int i = 0;
 	 char c;
-	while (*accept != '\0')
+	 char b;
+	 int j = 0;
+	 b = *(accept + j);
+	while (b != '\0')
 	{
 		i = 0;
 		c = *(s + i);
 		while (c != '\0')
 		{
-			if (c == *accept)
+			if (c == b)
 			{
 				cnt++;
 				break;
@@ -28,7 +31,12 @@ unsigned int _strspn(char *s, char *accept)
 			i++;
 			c = *(s + i);
 		}
-		accept++;
+		if (*(accept + j) != *(s + i))
+		{
+			break;
+		}
+		j++;
+		b = *(accept + j);
 	}
 	return (cnt);
 }
