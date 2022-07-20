@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * sqrt - find the natural square root
+ * _sqrt - find the natural square root
  * @n: number to be square rooted
  * @v: int
  * Return: int
  */
-int sqrt(int n, int v)
+int _sqrt(int n, int v)
 {
 	if (v * v == n)
 	{
@@ -14,7 +14,7 @@ int sqrt(int n, int v)
 	}
 	else if (v * v < n)
 	{
-		return (sqrt(n, v + 1));
+		return (_sqrt(n, v + 1));
 	}
 	else
 	{
@@ -29,5 +29,5 @@ int sqrt(int n, int v)
  */
 int _sqrt_recursion(int n)
 {
-	return (sqrt(n, 1));
+	return (_sqrt(n, 1));
 }
