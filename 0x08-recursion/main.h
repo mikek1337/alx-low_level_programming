@@ -1,3 +1,4 @@
+int factorial(int);
 int _strlen_recursion(char *s);
 void _puts_recursion(char *s);
 void _putchar(char);
