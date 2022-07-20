@@ -1,3 +1,4 @@
+int is_prime_number(int);
 int _pow_recursion(int x, int y);
 int factorial(int);
 int _strlen_recursion(char *s);
