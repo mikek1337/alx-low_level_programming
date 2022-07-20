@@ -1,14 +1,5 @@
 #include "main.h"
 
-/**
- * is_prime_number - determines if a number is prime or not
- * @n: the number to be evaluated
- * Return: integer
- */
-int is_prime_number(int n)
-{
-	return (prime_number(n, 2));
-}
 
 /**
  * prime_number - checks if the number is divisible
@@ -30,4 +21,15 @@ int prime_number(int n, int r)
 	{
 		return (prime_number(n, r + 1));
 	}
+}
+
+
+/**
+ * is_prime_number - determines if a number is prime or not
+ * @n: the number to be evaluated
+ * Return: integer
+ */
+int is_prime_number(int n)
+{
+	return (prime_number(n, 2));
 }
