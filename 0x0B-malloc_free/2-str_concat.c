@@ -19,14 +19,14 @@ char *str_concat(char *s1, char *s2)
 	 int i;
 	 int j;
 	 char *concat;
-	 if (s1 != NULL)
-	 {
-		 s1_size = strlen(s1);
-	 }
-	 if (s2 != NULL)
-	 {
-		 s2_size = strlen(s2);
-	 }
+	if (s1 != NULL)
+	{
+		s1_size = strlen(s1);
+	}
+	if (s2 != NULL)
+	{
+		s2_size = strlen(s2);
+	}
 	total_size = s1_size + s2_size;
 	total_size = total_size - 2;
 	if (s1 == NULL && s2 == NULL)
