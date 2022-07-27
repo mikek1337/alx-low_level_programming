@@ -5,7 +5,7 @@
  * main - entry point
  * @argc: number of arguments
  * @argv: arguments
- * return: 0 always
+ * Return: 0 always
  */
 int main(int argc, char *argv[])
 {
