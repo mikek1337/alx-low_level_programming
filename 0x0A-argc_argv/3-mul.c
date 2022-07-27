@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 	if ((argc - 1) == 0)
 	{
 		printf("%s\n", "Error");
-		return (0);
+		return (1);
 	}
 	n1 = atoi(argv[1]);
 	n2 = atoi(argv[2]);
