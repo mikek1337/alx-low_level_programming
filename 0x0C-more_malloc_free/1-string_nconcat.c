@@ -18,10 +18,10 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 
-	if (n < _strlen(s2))
-		m = malloc(_strlen(s1) + n * sizeof(char) + 1);
+	if (n < strlen(s2))
+		m = malloc(strlen(s1) + n * sizeof(char) + 1);
 	else
-		m = malloc(_strlen(s1) + _strlen(s2) + 1);
+		m = malloc(strlen(s1) + strlen(s2) + 1);
 
 	if (m == 0)
 		return (NULL);
