@@ -4,11 +4,11 @@
 /**
  * malloc_checked - checks if malloc assigned memory
  * @b: size of the memory
- * Returns: void
+ * Return: void
  */
 void *malloc_checked(unsigned int b)
 {
-	int *m;
+	 int *m;
 	m = malloc(b);
 	if (m == 0)
 		exit(98);
