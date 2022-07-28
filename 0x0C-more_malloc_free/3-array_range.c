@@ -1,6 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
-#include <stdio.h>
+
 /**
  * array_range - prints the min to max
  * @min: the start value
@@ -16,7 +16,7 @@ int *array_range(int min, int max)
 		return (NULL);
 	total = min + max + 1;
 	new_array = malloc(sizeof(int) * total);
-	printf("%d\n", total);
+
 	if (new_array == NULL)
 		return (NULL);
 	for (i = 0; i < total; i++)
