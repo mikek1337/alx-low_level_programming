@@ -1,11 +1,5 @@
 #include "3-calc.h"
 
-int op_add(int a, int b);
-int op_sub(int a, int b);
-int op_mul(int a, int b);
-int op_div(int a, int b);
-int op_mod(int a, int b);
-
 /**
  * op_add - add two numbers
  * @a: first number
@@ -40,15 +34,17 @@ int op_mul(int a, int b)
 }
 
 /**
- * op_div - divides two numbers
- * @a: first number
- * @b: second number
- * Return: division of the two number
+ * op_div - calculates the division of two integers
+ * @a: first integer
+ * @b: second integer
+ *
+ * Return: result of the division of a and b
  */
 int op_div(int a, int b)
 {
 	return (a / b);
 }
+
 
 /**
  * op_mod - module of two numbers
