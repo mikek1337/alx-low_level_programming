@@ -15,7 +15,7 @@ int main(int argc, char **argv)
 		exit(98);
 	if ((*op == '/' || *op == '%') && argv[3] == 0)
 		exit(100);
-	if (*op != '+' || *op != '-' || *op != '*' || *op != '/' || *op != '%')
+	if (op[1] != '\0' || get_op_func(op) == NULL)
 		exit(99);
 
 	printf("%d\n", get_op_func(op)(atoi(argv[1]),atoi(argv[3])));
