@@ -10,13 +10,15 @@
 void print_strings(const char *separator, const unsigned int n, ...)
 {
 	 unsigned int i;
-	 int slen = strlen(separator);
+	 int slen ;
 	 va_list args;
 	 int j;
 	 char *s;
 	va_start(args, n);
 	if (separator == NULL)
-		return;
+		slen = 0;
+	else
+		slen = strlen(separator);
 	for (i = 0; i < n; i++)
 	{
 		s = va_arg(args, char *);
