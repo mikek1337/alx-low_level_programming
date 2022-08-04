@@ -14,7 +14,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	 va_list args;
 	 int j;
 	 char *s;
-	printf("%ld\n", sizeof(args)/sizeof(args[0]));
 	va_start(args, n);
 	if (separator == NULL)
 		return;
