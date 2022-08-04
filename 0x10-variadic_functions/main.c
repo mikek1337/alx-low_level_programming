@@ -7,6 +7,6 @@
  *     */
 int main(void)
 {
-	    print_strings(", ", 2, "Jay", NULL);
+	    print_strings(", ", 4, NULL, NULL, "nil");
 	        return (0);
 }
