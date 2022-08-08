@@ -4,7 +4,7 @@
 #include <string.h>
 /**
  * print_all - print the character in the format
- * @format - format of arguments
+ * @format:format of arguments
  */
 void print_all(const char *format, ...)
 {
