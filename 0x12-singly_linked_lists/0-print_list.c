@@ -10,13 +10,20 @@
 size_t print(const list_t *h, int count)
 {
 	 char *s;
+	 unsigned int len = 0;
 	if (h == NULL)
 		return (count);
 	if (h->str == NULL)
+	{
 		s = "(nil)";
+		len = 0;
+	}
 	else
+	{
 		s = h->str;
-	printf("[%d] ", h->len);
+		len = h->len;
+	}
+	printf("[%d] ", len);
 	printf("%s\n", s);
 	h = h->next;
 	count++;
