@@ -7,7 +7,7 @@
  * @count: number of lists
  * Return: number of count
  */
-size_t print(const list_t *h, int count)
+size_t print(const listint_t *h, int count)
 {
 	if (h == NULL)
 		return (count);
@@ -21,7 +21,7 @@ size_t print(const list_t *h, int count)
  * @h: the list passed
  * Return: number of nodes
  */
-size_t listint_len(const list_t *h)
+size_t listint_len(const listint_t *h)
 {
 	return (print(h, 0));
 }
