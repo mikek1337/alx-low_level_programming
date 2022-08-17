@@ -7,24 +7,13 @@
  * @count: number of lists
  * Return: number of count
  */
-size_t print(const list_t *h, int count)
+size_t print(const listint_t *h, int count)
 {
-	 char *s;
-	 unsigned int len = 0;
+	 int s;
 	if (h == NULL)
 		return (count);
-	if (h->str == NULL)
-	{
-		s = "(nil)";
-		len = 0;
-	}
-	else
-	{
-		s = h->str;
-		len = h->len;
-	}
-	printf("[%d] ", len);
-	printf("%s\n", s);
+	s = h->n;
+	printf("%d\n", s);
 	h = h->next;
 	count++;
 	return (print(h, count));
@@ -35,7 +24,7 @@ size_t print(const list_t *h, int count)
  * @h: the list passed
  * Return: number of nodes
  */
-size_t print_listint(const list_t *h)
+size_t print_listint(const listint_t *h)
 {
 	return (print(h, 0));
 }
