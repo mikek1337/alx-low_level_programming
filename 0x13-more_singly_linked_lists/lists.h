@@ -16,6 +16,6 @@ int _putchar(char c);
 size_t print_listint(const listint_t *h);
 size_t listint_len(const listint_t *h);
 listint_t *add_nodeint(listint_t **head, const int n);
-listint_t *add_node_end(listint_t **head, const char *str);
+listint_t *add_nodeint_end(listint_t **head, const int n);
 void free_list(listint_t *head);
 #endif
