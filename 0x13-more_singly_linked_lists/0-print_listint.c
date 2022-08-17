@@ -31,11 +31,11 @@ size_t print(const list_t *h, int count)
 }
 
 /**
- * print_list - print all the elements of list_t
+ * print_listint - print all the elements of list_t
  * @h: the list passed
  * Return: number of nodes
  */
-size_t print_list(const list_t *h)
+size_t print_listint(const list_t *h)
 {
 	return (print(h, 0));
 }

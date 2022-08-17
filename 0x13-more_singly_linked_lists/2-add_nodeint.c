@@ -3,12 +3,12 @@
 #include "lists.h"
 
 /**
- * add_node - adds node to the beginning of the list
+ * add_nodeint - adds node to the beginning of the list
  * @head: the head of the list
  * @str: the string that needs to be added
  * Return: list pointer
  */
-list_t *add_node(list_t **head, char *str)
+list_t *add_nodeint(list_t **head, char *str)
 {
 	 list_t *node;
 	 unsigned int count = 0;

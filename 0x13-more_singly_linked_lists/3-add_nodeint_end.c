@@ -3,12 +3,12 @@
 #include "lists.h"
 
 /**
- * add_node_end - adds node to the end
+ * add_nodeint_end - adds node to the end
  * @head: head of the linked list
  * @str: value that needs to be added
  * Return: pointer to the new data
  */
-list_t *add_node_end(list_t **head, const char *str)
+list_t *add_nodeint_end(list_t **head, const char *str)
 {
 	 list_t *current;
 	 list_t *new_node;
