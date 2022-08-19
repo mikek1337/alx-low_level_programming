@@ -5,14 +5,13 @@
 /**
  * binary_to_uint - changes binary into decimal
  * @b: the binary data
- * return: decimal
- * 
+ * Return: decimal
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int n = 0;
-	int len = 0;
-	int i = 0;
+	 unsigned int n = 0;
+	 int len = 0;
+	 int i = 0;
 	if (b == NULL)
 		return (0);
 	while (b[len])
