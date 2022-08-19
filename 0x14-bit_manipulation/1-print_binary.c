@@ -34,7 +34,7 @@ return (x * _pow_recursion(x, y - 1));
 
 void print_binary(unsigned long int n)
 {
-	 int i;
+	int i;
 
 	for (i = 0; _pow_recursion(2, i) <= n; i++)
 	;
