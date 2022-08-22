@@ -21,6 +21,8 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	if (fd == -1 || filename == NULL)
 		return (0);
 	buf = malloc(sizeof(char) * letters);
+	if (buf == NULL)
+		return (0);
 	fcount = read(fd, buf, sizeof(char) * letters);
 	while (*buf != '\0')
 	{
